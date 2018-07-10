@@ -14,15 +14,9 @@ sh chmod -R +x $WORKSPACE/repo/$BUILD_SCRIPTS"
 }
 }
 stage('build') {
-sh "$BUILD_HOME/mypipeline/build.sh"
 steps {
+sh "$BUILD_HOME/mypipeline/build.sh"
 }
-
-}
-
-}
-post {
-always {
 }
 }
 }
