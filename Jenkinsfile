@@ -2,7 +2,7 @@ pipeline {
 environment {
 BUILD_SCRIPTS_GIT="https://github.com/amartya-in/sample.git"
 BUILD_SCRIPTS='mypipeline'
-BUILD_HOME='/Users/ayush/jenkins-my/workspace/'
+BUILD_HOME='/Users/ayush/jenkins-my/'
 }
 agent any
 stages {
