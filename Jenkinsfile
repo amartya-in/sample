@@ -8,9 +8,9 @@ agent any
 stages {
 stage('Checkout: Code') {
 steps {
-sh "mkdir -p $BUILD_HOME/repo;
-git clone $BUILD_SCRIPTS_GIT repo/$BUILD_SCRIPTS"
-sh "chmod -R +x $WORKSPACE/repo/$BUILD_SCRIPTS"
+sh "mkdir -p $BUILD_HOME/repo; \
+git clone $BUILD_SCRIPTS_GIT repo/$BUILD_SCRIPTS; \
+sh chmod -R +x $WORKSPACE/repo/$BUILD_SCRIPTS"
 }
 }
 stage('build') {
