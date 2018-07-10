@@ -19,4 +19,9 @@ sh "$BUILD_HOME/mypipeline/build.sh"
 }
 }
 }
+post {
+always {
+cleanWs()
+}
+}
 }
